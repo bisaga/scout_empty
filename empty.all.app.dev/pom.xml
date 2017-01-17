@@ -1,0 +1,50 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>com.bisaga.apps.empty.all.app.dev</artifactId>
+  <packaging>war</packaging>
+  <name>Empty</name>
+  
+  <parent>
+  	<groupId>com.bisaga.apps</groupId>
+  	<artifactId>empty</artifactId>
+  	<version>1.0.0-SNAPSHOT</version>
+  	<relativePath>..\empty</relativePath>
+  </parent>
+
+  	<dependencies>
+		<!-- Application Client -->
+		<dependency>
+	        <groupId>com.bisaga.apps</groupId>
+	        <artifactId>empty.ui.html</artifactId>
+		</dependency>
+
+		<!-- Jetty Server -->
+		<dependency>
+			<groupId>org.eclipse.scout.rt</groupId>
+			<artifactId>org.eclipse.scout.dev.jetty</artifactId>
+		</dependency>
+
+		<!-- Logging -->
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>jul-to-slf4j</artifactId>
+		</dependency>
+
+		<!-- Application Server -->
+		<dependency>
+	        <groupId>com.bisaga.apps</groupId>
+	        <artifactId>empty.server</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.eclipse.scout.rt</groupId>
+			<artifactId>org.eclipse.scout.rt.serverbridge</artifactId>
+		</dependency>
+	</dependencies>
+  
+  
+</project>
